@@ -1,60 +1,42 @@
 # 🧾 Repo-Report
 
-**Repo-Report** is a CLI tool that scans all GitHub repositories you have access to and generates a simple, readable configuration report. It gives you a quick snapshot of each repository’s settings and status — all in one place.
+**Repo-Report** is a simple command-line tool (CLI) that helps you get a quick overview of all your GitHub repositories in one place.
 
-It’s useful for developers, maintainers, or anyone who wants an overview of **all their GitHub projects** without having to click through every repo manually.
+Instead of clicking through every repo manually on GitHub, Repo-Report shows important info like whether issues are turned on, if the repo has a license, when it was last updated, and more — all from one command.
 
----
-
-## ⭐ Key Features (Default Output)
-
-When you run `repo-report`, it checks every accessible GitHub repository and reports the following:
-
-- ✅ **Issues Enabled** — Are GitHub Issues turned on?
-- 🗂️ **Projects Enabled** — Are GitHub Projects turned on?
-- 📜 **License Present** — Does the repository include a LICENSE file?
-- 📖 **Wiki Enabled** — Is the GitHub Wiki feature turned on?
-- 🔐 **Visibility** — Is the repository **public**, **private**, or **internal**?
-- 🧪 **Has Actions** — Are GitHub Actions workflows present?
-- 🧩 **Has Topics** — Does the repo have any tags or topics set?
-- 🕒 **Last Push Date** — When was the last push made to the repository?
-- 🧑‍🤝‍🧑 **Collaborators** — How many people have access to the repo?
-
-> *Note: These are the default metrics. More options and filters may be added in future updates.*
+It’s perfect for developers, students, or maintainers who want a clear summary of their GitHub projects.
 
 ---
 
 ## 🛠️ How It Works
 
-1. Repo-report authenticates with GitHub using your personal access token (PAT).
-2. It scans all repositories the token has access to — including personal, organizational, and collaborator repos.
-3. It fetches metadata from GitHub’s API and compiles it into a structured, human-readable report.
-4. Output can be viewed in your terminal or exported to a file (support coming soon).
+1. **You run the tool in your terminal.**
+2. **Repo-Report connects to GitHub using your personal access token (PAT).**  
+   This is a password-like key GitHub gives you to allow tools to access your repos.
+3. **It scans every repository you have access to** — personal or organizational.
+4. **You get a report in your terminal** that shows useful details about each repo.
 
-This is great for:
-
-- Auditing repos across an organization
-- Spotting missing configuration details
-- Keeping track of which repos are active or stale
-- Quickly identifying which features are enabled or disabled
-
----
-
-## 🚧 Coming Soon
-
-- Export options (CSV, JSON)
-- Support for advanced filtering (e.g. org-only, archived-only)
-- Visual output formatting
-- Summary dashboards
+Here’s what it looks at by default:
+- ✅ Are GitHub Issues turned on?
+- 🗂️ Are GitHub Projects enabled?
+- 📜 Does the repo have a license file?
+- 📖 Is the GitHub Wiki enabled?
+- 🔐 Is the repo public, private, or internal?
+- 🧪 Are GitHub Actions workflows present?
+- 🧩 Are topics/tags set?
+- 🕒 When was the last push?
+- 🧑‍🤝‍🧑 How many collaborators are there?
 
 ---
 
-## 📬 Feedback
+## 🚀 Getting Started
 
-If you have suggestions or want to contribute, feel free to open an issue or pull request.
-
----
-
-## 📄 License
-
-MIT License
+Installation
+npm install to install all dependencies
+create .env file and initialize GH_TOKEN or GITHUB_TOKEN (in order of precedence) with your Github token
+Usage (for public)
+generate a personal access token using github here and add the repo scope to it.
+on the terminal run export GH_TOKEN=<the personal access token generated>
+run npx repo-report
+Usage (for Contributors)
+execute ./bin/run to get a report of all your repositories in the terminal
