@@ -1,43 +1,60 @@
-# repo-report <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
+# 🧾 Repo-Report
 
-[![github actions][actions-image]][actions-url]
-[![coverage][codecov-image]][codecov-url]
-[![dependency status][deps-svg]][deps-url]
-[![dev dependency status][dev-deps-svg]][dev-deps-url]
-[![License][license-image]][license-url]
-[![Downloads][downloads-image]][downloads-url]
+**Repo-Report** is a CLI tool that scans all GitHub repositories you have access to and generates a simple, readable configuration report. It gives you a quick snapshot of each repository’s settings and status — all in one place.
 
-[![npm badge][npm-badge-png]][package-url]
+It’s useful for developers, maintainers, or anyone who wants an overview of **all their GitHub projects** without having to click through every repo manually.
 
-CLI to list all repos a user has access to, and report on their configuration in aggregate.
+---
 
-# Installation
+## ⭐ Key Features (Default Output)
 
-- `npm install` to install all dependencies
-- create `.env` file and initialize `GH_TOKEN` or `GITHUB_TOKEN` (in order of precedence) with your Github token
+When you run `repo-report`, it checks every accessible GitHub repository and reports the following:
 
-# Usage (for public)
+- ✅ **Issues Enabled** — Are GitHub Issues turned on?
+- 🗂️ **Projects Enabled** — Are GitHub Projects turned on?
+- 📜 **License Present** — Does the repository include a LICENSE file?
+- 📖 **Wiki Enabled** — Is the GitHub Wiki feature turned on?
+- 🔐 **Visibility** — Is the repository **public**, **private**, or **internal**?
+- 🧪 **Has Actions** — Are GitHub Actions workflows present?
+- 🧩 **Has Topics** — Does the repo have any tags or topics set?
+- 🕒 **Last Push Date** — When was the last push made to the repository?
+- 🧑‍🤝‍🧑 **Collaborators** — How many people have access to the repo?
 
-- generate a personal access token using github [here](https://github.com/settings/tokens) and add the `repo` scope to it.
-- on the terminal run `export GH_TOKEN=<the personal access token generated>`
-- run `npx repo-report`
+> *Note: These are the default metrics. More options and filters may be added in future updates.*
 
-# Usage (for Contributors)
+---
 
-- execute `./bin/run` to get a report of all your repositories in the terminal
+## 🛠️ How It Works
 
-[package-url]: https://npmjs.org/package/repo-report
-[npm-version-svg]: https://versionbadg.es/ljharb/repo-report.svg
-[deps-svg]: https://david-dm.org/ljharb/repo-report.svg
-[deps-url]: https://david-dm.org/ljharb/repo-report
-[dev-deps-svg]: https://david-dm.org/ljharb/repo-report/dev-status.svg
-[dev-deps-url]: https://david-dm.org/ljharb/repo-report#info=devDependencies
-[npm-badge-png]: https://nodei.co/npm/repo-report.png?downloads=true&stars=true
-[license-image]: https://img.shields.io/npm/l/repo-report.svg
-[license-url]: LICENSE
-[downloads-image]: https://img.shields.io/npm/dm/repo-report.svg
-[downloads-url]: https://npm-stat.com/charts.html?package=repo-report
-[codecov-image]: https://codecov.io/gh/ljharb/repo-report/branch/main/graphs/badge.svg
-[codecov-url]: https://app.codecov.io/gh/ljharb/repo-report/
-[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/ljharb/repo-report
-[actions-url]: https://github.com/ljharb/repo-report/actions
+1. Repo-report authenticates with GitHub using your personal access token (PAT).
+2. It scans all repositories the token has access to — including personal, organizational, and collaborator repos.
+3. It fetches metadata from GitHub’s API and compiles it into a structured, human-readable report.
+4. Output can be viewed in your terminal or exported to a file (support coming soon).
+
+This is great for:
+
+- Auditing repos across an organization
+- Spotting missing configuration details
+- Keeping track of which repos are active or stale
+- Quickly identifying which features are enabled or disabled
+
+---
+
+## 🚧 Coming Soon
+
+- Export options (CSV, JSON)
+- Support for advanced filtering (e.g. org-only, archived-only)
+- Visual output formatting
+- Summary dashboards
+
+---
+
+## 📬 Feedback
+
+If you have suggestions or want to contribute, feel free to open an issue or pull request.
+
+---
+
+## 📄 License
+
+MIT License
