@@ -30,17 +30,15 @@ CLI to list all repos a user has access to, and report on their configuration in
 ## Using your PAT with Repo-Report
 
 - You can set your token as an environment variable in your terminal:
-  
 - export GH_TOKEN=<your_personal_access_token>
 
 OR add it to a .env file in the project root:
-
 - GH_TOKEN=your_personal_access_token
 
 
 # Usage (for public)
 
-- generate a personal access token using github [here](https://github.com/settings/tokens) and add the `repo` scope to it.
+- After you generated your PAT you can open terminal then do the following:
 - on the terminal run `export GH_TOKEN=<the personal access token generated>`
 - run `npx repo-report`
 
