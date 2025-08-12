@@ -17,6 +17,29 @@ CLI to list all repos a user has access to, and report on their configuration in
 - `npm install` to install all dependencies
 - create `.env` file and initialize `GH_TOKEN` or `GITHUB_TOKEN` (in order of precedence) with your Github token
 
+## Getting Started
+
+## Creating a Personal Access Token (PAT)
+
+1. Go to [GitHub Tokens Settings](https://github.com/settings/tokens).
+2. Click **Generate new token**.
+3. Give it a descriptive name (e.g., "repo-report token").
+4. Select the `repo` scope.
+5. Generate the token and copy it.
+
+---
+
+## Using your PAT with Repo-Report
+
+- You can set your token as an environment variable in your terminal:
+
+``bash
+
+export GH_TOKEN=<your_personal_access_token>
+OR add it to a .env file in the project root:
+GH_TOKEN=your_personal_access_token
+
+
 # Usage (for public)
 
 - generate a personal access token using github [here](https://github.com/settings/tokens) and add the `repo` scope to it.
