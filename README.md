@@ -4,9 +4,7 @@
 [![coverage][codecov-image]][codecov-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
-
 [![npm badge][npm-badge-png]][package-url]
-
 CLI to list all repos a user has access to, and report on their configuration in aggregate.
 
 
@@ -32,7 +30,7 @@ CLI to list all repos a user has access to, and report on their configuration in
 - You can set your token as an environment variable in your terminal:
 - run `export GH_TOKEN=<your_personal_access_token>`
 
-OR add it to a .env file in the project root:
+OR you can add it to a .env file in the project root:
 - run `GH_TOKEN=your_personal_access_token`
 
 
