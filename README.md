@@ -54,7 +54,7 @@ OR you can add it to a .env file in the project root:
 
 ## Repo-Report Dashboard
 
-The following shows an example output of `repo-report --all --actual` for my repositories. It highlights key repository settings and metrics such as issues, projects, branch protection, and merge strategies.
+The following shows an example output of repo-report --all --actual for my repositories. It shows important repository settings like issues, projects, branch protection, and allowed merge strategies. Additional details such as auto-merge, branch deletion on merge, and license information are also included in the full output as seen by the extended table below.
 
 ![Repo-Report Dashboard Example](./Repo-Report%20Table.png)
 
