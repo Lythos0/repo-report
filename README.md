@@ -1,4 +1,4 @@
-# repo-report <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
+# Repo-Report <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
 [![github actions][actions-image]][actions-url]
 [![coverage][codecov-image]][codecov-url]
@@ -30,10 +30,10 @@ CLI to list all repos a user has access to, and report on their configuration in
 ## Using your PAT with Repo-Report
 
 - You can set your token as an environment variable in your terminal:
-- export GH_TOKEN=<your_personal_access_token>
+- run `export GH_TOKEN=<your_personal_access_token>`
 
 OR add it to a .env file in the project root:
-- GH_TOKEN=your_personal_access_token
+- run `GH_TOKEN=your_personal_access_token`
 
 
 # Usage (for public)
@@ -50,8 +50,8 @@ OR add it to a .env file in the project root:
 - If you would like an extended and more detailed view of your repos you can use:
 -  npx repo-report --all --actual
 - If you would like to have this be the default view whenever you run repo-report, you can run with:
-- alias repo-report='npx repo-report --all --actual
-- source ~/.bashrc
+- run `alias repo-report='npx repo-report --all --actual`
+- run `source ~/.bashrc`
 
 
 
