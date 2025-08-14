@@ -52,6 +52,13 @@ OR you can add it to a .env file in the project root:
 -  `alias repo-report='npx repo-report --all --actual`
 - then run `source ~/.bashrc`
 
+## Repo-Report Dashboard
+
+The following shows an example output of `repo-report --all --actual` for my repositories. It highlights key repository settings and metrics such as issues, projects, branch protection, and merge strategies.
+
+![Repo-Report Dashboard Example](./images/Repo-Report%20Table.png)
+
+
 
 
 
