@@ -46,7 +46,7 @@ OR add it to a .env file in the project root:
 
 - execute `./bin/run` to get a report of all your repositories in the terminal
 
-#Optional (but helpful)
+# Optional (but helpful)
 - If you would like an extended and more detailed view of your repos you can use:
 -  npx repo-report --all --actual
 - If you would like to have this be the default view whenever you run repo-report, you can run with:
