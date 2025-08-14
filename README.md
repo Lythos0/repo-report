@@ -62,6 +62,7 @@ The following shows an example output of `repo-report --all --actual` for my rep
 
 
 
+
 [package-url]: https://npmjs.org/package/repo-report
 [npm-version-svg]: https://versionbadg.es/ljharb/repo-report.svg
 [deps-svg]: https://david-dm.org/ljharb/repo-report.svg
