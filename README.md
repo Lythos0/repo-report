@@ -53,7 +53,7 @@ OR you can add it to a .env file in the project root:
 2. ``--actual``
 - Pulls live, current data from GitHub instead of cached data.
 
-3.`` --mine``
+3. `` --mine``
 - Only include repositories you own.
 
 4. ``--org <orgName>``
