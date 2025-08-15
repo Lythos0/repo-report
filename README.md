@@ -47,29 +47,39 @@ OR you can add it to a .env file in the project root:
 
 # Common Flags with running npx repo-report:
 
-1. ``--all``
-- Include all repositories you have access to (public, private, and internal, if your token allows).
-
-2. ``--actual``
-- Pulls live, current data from GitHub instead of cached data.
-
-3. `` --mine``
-- Only include repositories you own.
-
-4. ``--org <orgName>``
-- Only include repositories from the specified organization.
-
-5. ``--json``
-- Output results in JSON format instead of a table.
-
-6. ``--filter <expression>``
-- Filter repositories by name or property.
-
-7. ``--token <your actual token here>``
-- Provide a GitHub personal access token (PAT) to authenticate.
-  
-8. ``--help``
+1. ``--help``
 - Show all available flags and usage examples.
+
+2. ``--unactionable``
+- Shows metrics you can’t change 
+
+3. ``--actual``
+- Shows raw values instead of a ✅ or ❌
+
+4. ``--goodness``
+- Shows if a metric is "good" (✅) or "bad" (❌)
+
+5. ``-m, --metrics``
+- Lists available metrics.
+
+6. ``--all``
+- Shows ALL metrics (Even ones that aren't actionable)
+
+7. ``-p, --pick``
+- Lets you select specific metrics
+
+8. ``-f, --focus``
+- Filters by repo type such as sources, forks, templates, private or public
+
+9. ``--names``
+- Shows repo names alongside their owners
+
+10. ``-s, --sort``
+- Sorts alphabetically (It's sorted by last updated by default)
+
+11. ``--cache``
+- Saves API request data in ``--cacheDir``.
+
 
 # Optional (but helpful)
 - If you would like an extended and more detailed view of your repos you can use:
