@@ -45,6 +45,32 @@ OR you can add it to a .env file in the project root:
 
 - execute `./bin/run` to get a report of all your repositories in the terminal
 
+# Common Flags with running npx repo-report:
+
+1. ``--all``
+- Include all repositories you have access to (public, private, and internal, if your token allows).
+
+2. ``--actual``
+- Pulls live, current data from GitHub instead of cached data.
+
+3.`` --mine``
+- Only include repositories you own.
+
+4. ``--org <orgName>``
+- Only include repositories from the specified organization.
+
+5. ``--json``
+- Output results in JSON format instead of a table.
+
+6. ``--filter <expression>``
+- Filter repositories by name or property.
+
+7. ``--token <your actual token here>``
+- Provide a GitHub personal access token (PAT) to authenticate.
+  
+8. ``--help``
+- Show all available flags and usage examples.
+
 # Optional (but helpful)
 - If you would like an extended and more detailed view of your repos you can use:
 - `npx repo-report --all --actual`
