@@ -45,7 +45,7 @@ OR you can add it to a .env file in the project root:
 
 - execute `./bin/run` to get a report of all your repositories in the terminal
 
-# Common Flags with running npx repo-report:
+# Running Repo-Report with ``npx repo-report --help``
 
 1. ``--help``
 - Show all available flags and usage examples.
